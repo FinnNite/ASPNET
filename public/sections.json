@@ -1,0 +1,48 @@
+{
+    "sectionsData": [
+        {
+            "id": "hero",
+            "type": "hero",
+            "title": "Добро пожаловать в мир настольных игр!",
+            "description": "Откройте для себя увлекательный мир настольных игр.",
+            "buttonText": "Узнать больше"
+        },
+        {
+            "id": "about",
+            "type": "about",
+            "title": "О нас",
+            "description": "Мы - команда энтузиастов, которая помогает людям находить лучшие настольные игры для любого случая."
+        },
+        {
+            "id": "features",
+            "type": "features",
+            "title": "Особенности",
+            "items": [
+                { "icon": "fas fa-dice", "text": "Широкий выбор игр" },
+                { "icon": "fas fa-users", "text": "Игры для всей семьи" },
+                { "icon": "fas fa-trophy", "text": "Соревновательные игры" }
+            ]
+        },
+        {
+            "id": "gallery",
+            "type": "gallery",
+            "title": "Галерея",
+            "images": ["image1.jpg", "image2.jpg"]
+        },
+        {
+            "id": "contact",
+            "type": "contact",
+            "title": "Контакты",
+            "formFields": [
+                { "type": "text", "placeholder": "Ваше имя", "id": "name" },
+                { "type": "email", "placeholder": "Ваш email", "id": "email" },
+                { "type": "textarea", "placeholder": "Ваше сообщение", "id": "message" }
+            ],
+            "contactInfo": [
+                "Адрес: ул. Примерная, 123",
+                "Телефон: +7 (123) 456-78-90",
+                "Email: info@boardgames.com"
+            ]
+        }
+    ]
+}
