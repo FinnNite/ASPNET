@@ -111,6 +111,7 @@ section {
 }
 
 .feature-item, .gallery img, .contact form {
+    padding: 16px 0px 16px 0px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -132,7 +133,7 @@ section {
 
 .feature-item i {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: #ff6600;
 }
 
