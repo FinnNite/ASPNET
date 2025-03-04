@@ -180,6 +180,3 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkVisibility);
     checkVisibility();
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-});
