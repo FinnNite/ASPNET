@@ -40,7 +40,7 @@ const sectionsData = [
         contactInfo: [
             "Адрес: ул. Примерная, 123",
             "Телефон: +7 (123) 456-78-90",
-            "Email: info@boardgames.com"
+            "Email: info@example.com"
         ]
     }
 ];
@@ -58,51 +58,51 @@ function createSection(section) {
             break;
         case "about":
             html = `
-                <h2>О нас</h2>
-                <p>Мы - команда энтузиастов, которая помогает людям находить лучшие настольные игры для любого случая.</p>
+                <h2>${section.title}</h2>
+                <p>${section.description}</p>
             `;
             break;
         case "features":
             html = `
-                <h2>Особенности</h2>
+                <h2>${section.title}</h2>
                 <div class="features-grid">
                     <div class="feature-item">
-                        <i class="fas fa-dice"></i>
-                        <p>Широкий выбор игр</p>
+                        <i class="${section.items[0].icon}"></i>
+                        <p>${section.items[0].text}</p>
                     </div>
                     <div class="feature-item">
-                        <i class="fas fa-users"></i>
-                        <p>Игры для всей семьи</p>
+                        <i class="${section.items[1].icon}"></i>
+                        <p>${section.items[1].text}</p>
                     </div>
                     <div class="feature-item">
-                        <i class="fas fa-trophy"></i>
-                        <p>Соревновательные игры</p>
+                        <i class="${section.items[2].icon}"></i>
+                        <p>${section.items[2].text}</p>
                     </div>
                 </div>
             `;
             break;
         case "gallery":
             html = `
-                <h2>Галерея</h2>
+                <h2>${section.title}</h2>
                 <div class="gallery-grid">
-                    <img src="image1.jpg" alt="Игра 1">
-                    <img src="image2.jpg" alt="Игра 2">
+                    <img src="${section.images[0]}" alt="Игра 1">
+                    <img src="${section.images[1]}" alt="Игра 2">
                 </div>
             `;
             break;
         case "contact":
             html = `
-                <h2>Контакты</h2>
+                <h2>${section.title}</h2>
                 <form id="contact-form">
-                    <input type="text" id="name" placeholder="Ваше имя" required>
-                    <input type="email" id="email" placeholder="Ваш email" required>
-                    <textarea id="message" placeholder="Ваше сообщение" required></textarea>
+                    <input type="${section.formFields[0].text}" id="${section.formFields[0].id}" placeholder="${section.formFields[0].placeholder}" required>
+                    <input type="${section.formFields[1].text}" id="${section.formFields[1].id}" placeholder="${section.formFields[1].placeholder}" required>
+                    <textarea id="${section.formFields[2].id}" placeholder="${section.formFields[2].placeholder}" required></textarea>
                     <button type="submit">Отправить</button>
                 </form>
                 <div class="contact-info">
-                    <p>Адрес: ул. Примерная, 123</p>
-                    <p>Телефон: +7 (123) 456-78-90</p>
-                    <p>Email: info@example.com</p>
+                    <p>${section.contactInfo[0]}</p>
+                    <p>${section.contactInfo[1]}</p>
+                    <p>${section.contactInfo[2]}</p>
                 </div>
             `;
             break;
