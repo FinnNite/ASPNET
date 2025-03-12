@@ -106,13 +106,13 @@ function createSection(section) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.getElementById('menu-icon');
-    //const navUl = document.querySelector('header nav ul');
+    const navUl = document.querySelector('header nav ul');
     console.log(menuIcon);
-    //console.log(navUl);
+    console.log(navUl);
     const featuresSection = document.getElementById('features');
 
     menuIcon.addEventListener('click', function() {
-        //navUl.classList.toggle('show');
+        navUl.classList.toggle('show');
     });
 
     const SectionHero = document.getElementById('hero');
